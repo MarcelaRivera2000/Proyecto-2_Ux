@@ -1,0 +1,30 @@
+*{
+    color: #FFFFFF;
+    font-family:monospace;
+    letter-spacing: 5px;
+}
+
+.principal{
+    background-color: #1E2329;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    display: flex;
+    margin-left: 288px;
+    margin-right: 288px;
+    
+    text-align: center;
+    padding: 8px;
+}
+
+.titulo{
+    display: flex;
+    margin-left: 288px;
+    margin-right: 288px;
+    margin-top: 20px;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
