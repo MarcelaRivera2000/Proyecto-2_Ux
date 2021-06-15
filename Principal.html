@@ -6,58 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto#2_Ux</title>
     <link rel="stylesheet" href="Principal.css">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
 </head>
 <body>
-    <script src = Principal.js ></script>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">MENEXLIST</a>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown" dropdown>
-                        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-                        Academic<span class="caret"></span></a>
-                        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Carreras</a>
-                        </div>
-                        <li class="nav-item dropdown" dropdown>
-                        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-                        About Us<span class="caret"></span></a>
-                        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">About Us</a>
-                        </div>
-                        <li class="nav-item dropdown active" dropdown>
-                        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-                        Campus Life<span class="caret"></span></a>
-                        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Laboratorios</a>
-                        </div>
-                    </li>
-                    </li>
-                    </li>
-                </ul>
+    <header >
+        <div class ="wrapper">
+            <p id="NameEmpresa">Menexx</p>
+            <nav>
+                <a href="#"  type="button">Search</a>
+                <a href="#"  type="button">Friends</a>
+                <a href="#"  type="button">Profile</a>
+            </nav>
         </div>
-    </nav>
-    <div class="principal">
-        <h2 class="titulo">LISTA DE QUEHACERES</h2>
-        
+    </header>
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><p class="fas fa-times">x</p></a>
+            <h3 class ="wrapper">NUEVA TAREA PENDIENTE</h3>
+            <br>
+            <form action="" class="wrapper">
+                <div class="contenedor">
+                    <p>Titulo: <input id= "Vtitulo" type="text"/></p>
+                    <textarea id="Vtext-area"></textarea>
+                </div>
+                <div id="VEtiquetas"></div>
+                <button id="btnGuardar" class="btnGuardar">Guardar</button>
+            </form>
+        </div>
     </div>
-
+    <button id="btnAgregar" class="">Agregar</button>
+    <div id="texto-prueba">
+        <p class="wrapper">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor, nunc at varius gravida, libero dui commodo neque, id iaculis velit sem eu elit. In quis ornare felis, eget egestas tortor. Sed ac sagittis lorem. Aliquam commodo mollis enim, sit amet dignissim tellus cursus ut. Cras hendrerit velit purus, quis placerat velit interdum ut. Quisque tempus, mauris a tempor malesuada, dolor nibh porttitor ipsum, id ullamcorper ex leo sit amet felis. Sed molestie convallis turpis quis semper. Praesent ultricies, magna sit amet finibus laoreet, enim nibh tristique leo, vel congue justo augue eget ex. Morbi lobortis ipsum in fringilla porta. Vivamus nibh eros, ultrices non tortor nec, ultrices posuere dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum semper vestibulum odio ac auctor. Duis eleifend nisl lorem, in volutpat purus hendrerit nec. Praesent luctus purus ornare sodales eleifend. Quisque auctor, nisl ac imperdiet efficitur, nibh lacus faucibus erat, non vulputate risus lorem nec enim. Nulla luctus velit ac metus euismod lacinia.
+            Praesent vel rhoncus augue. Maecenas cursus commodo nulla eget viverra. Vivamus semper id erat et commodo. In congue enim condimentum sem vehicula, vel viverra felis sagittis. Integer non velit quis neque sollicitudin viverra. Ut eget porta dui. Donec tempor porttitor velit, vel eleifend nulla maximus in. Aliquam erat volutpat.
+            Suspendisse pharetra aliquam mauris, sed tincidunt est rutrum quis. Sed tincidunt sit amet ipsum eu tempus. Sed at nibh ac quam ullamcorper suscipit. Aenean viverra luctus ante, quis auctor neque varius id. In hac habitasse platea dictumst. Suspendisse dapibus scelerisque lectus, sit amet tincidunt eros efficitur id. Sed in interdum tortor. Sed in rutrum urna.
+            Curabitur luctus, magna eget elementum efficitur, ante velit tincidunt orci, in pharetra lorem enim nec mi. Nulla mattis sodales nibh at dignissim. Aliquam non eros at quam laoreet tempor. Ut at elit metus. Integer dictum eu purus vel ullamcorper. In commodo tristique dolor, at dictum est iaculis id. Etiam rutrum erat eu risus ultrices tristique. Nunc in placerat nulla, vel tincidunt sem. Curabitur nec elementum leo. Phasellus a venenatis elit. Vestibulum ac facilisis nibh, quis consectetur dui. Nullam rutrum consectetur congue. Duis id porta urna, iaculis dictum ipsum. Morbi eget congue nisi, vel commodo neque.
+            Sed semper nisl id magna bibendum posuere. Morbi sodales mi a sagittis faucibus. Donec sit amet sem urna. In at consectetur odio, eu malesuada erat. Donec at sagittis tortor, a elementum libero. Donec ultrices auctor velit, non condimentum leo ultricies et. Ut in quam nec nisi convallis luctus. Curabitur eros lacus, iaculis at lobortis sed, ornare eu massa. Mauris eu bibendum nulla. Phasellus tempor ipsum a leo bibendum bibendum. Nulla in tincidunt tortor. Quisque sodales ante eget mattis semper. Maecenas cursus consectetur metus, et rhoncus odio efficitur vel. Morbi vulputate velit ante, ac rhoncus leo rhoncus eget.
+        </p>
+        <p class="wrapper">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor, nunc at varius gravida, libero dui commodo neque, id iaculis velit sem eu elit. In quis ornare felis, eget egestas tortor. Sed ac sagittis lorem. Aliquam commodo mollis enim, sit amet dignissim tellus cursus ut. Cras hendrerit velit purus, quis placerat velit interdum ut. Quisque tempus, mauris a tempor malesuada, dolor nibh porttitor ipsum, id ullamcorper ex leo sit amet felis. Sed molestie convallis turpis quis semper. Praesent ultricies, magna sit amet finibus laoreet, enim nibh tristique leo, vel congue justo augue eget ex. Morbi lobortis ipsum in fringilla porta. Vivamus nibh eros, ultrices non tortor nec, ultrices posuere dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum semper vestibulum odio ac auctor. Duis eleifend nisl lorem, in volutpat purus hendrerit nec. Praesent luctus purus ornare sodales eleifend. Quisque auctor, nisl ac imperdiet efficitur, nibh lacus faucibus erat, non vulputate risus lorem nec enim. Nulla luctus velit ac metus euismod lacinia.
+            Praesent vel rhoncus augue. Maecenas cursus commodo nulla eget viverra. Vivamus semper id erat et commodo. In congue enim condimentum sem vehicula, vel viverra felis sagittis. Integer non velit quis neque sollicitudin viverra. Ut eget porta dui. Donec tempor porttitor velit, vel eleifend nulla maximus in. Aliquam erat volutpat.
+            Suspendisse pharetra aliquam mauris, sed tincidunt est rutrum quis. Sed tincidunt sit amet ipsum eu tempus. Sed at nibh ac quam ullamcorper suscipit. Aenean viverra luctus ante, quis auctor neque varius id. In hac habitasse platea dictumst. Suspendisse dapibus scelerisque lectus, sit amet tincidunt eros efficitur id. Sed in interdum tortor. Sed in rutrum urna.
+            Curabitur luctus, magna eget elementum efficitur, ante velit tincidunt orci, in pharetra lorem enim nec mi. Nulla mattis sodales nibh at dignissim. Aliquam non eros at quam laoreet tempor. Ut at elit metus. Integer dictum eu purus vel ullamcorper. In commodo tristique dolor, at dictum est iaculis id. Etiam rutrum erat eu risus ultrices tristique. Nunc in placerat nulla, vel tincidunt sem. Curabitur nec elementum leo. Phasellus a venenatis elit. Vestibulum ac facilisis nibh, quis consectetur dui. Nullam rutrum consectetur congue. Duis id porta urna, iaculis dictum ipsum. Morbi eget congue nisi, vel commodo neque.
+            Sed semper nisl id magna bibendum posuere. Morbi sodales mi a sagittis faucibus. Donec sit amet sem urna. In at consectetur odio, eu malesuada erat. Donec at sagittis tortor, a elementum libero. Donec ultrices auctor velit, non condimentum leo ultricies et. Ut in quam nec nisi convallis luctus. Curabitur eros lacus, iaculis at lobortis sed, ornare eu massa. Mauris eu bibendum nulla. Phasellus tempor ipsum a leo bibendum bibendum. Nulla in tincidunt tortor. Quisque sodales ante eget mattis semper. Maecenas cursus consectetur metus, et rhoncus odio efficitur vel. Morbi vulputate velit ante, ac rhoncus leo rhoncus eget.
+        </p>
+        <p class="wrapper">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor, nunc at varius gravida, libero dui commodo neque, id iaculis velit sem eu elit. In quis ornare felis, eget egestas tortor. Sed ac sagittis lorem. Aliquam commodo mollis enim, sit amet dignissim tellus cursus ut. Cras hendrerit velit purus, quis placerat velit interdum ut. Quisque tempus, mauris a tempor malesuada, dolor nibh porttitor ipsum, id ullamcorper ex leo sit amet felis. Sed molestie convallis turpis quis semper. Praesent ultricies, magna sit amet finibus laoreet, enim nibh tristique leo, vel congue justo augue eget ex. Morbi lobortis ipsum in fringilla porta. Vivamus nibh eros, ultrices non tortor nec, ultrices posuere dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum semper vestibulum odio ac auctor. Duis eleifend nisl lorem, in volutpat purus hendrerit nec. Praesent luctus purus ornare sodales eleifend. Quisque auctor, nisl ac imperdiet efficitur, nibh lacus faucibus erat, non vulputate risus lorem nec enim. Nulla luctus velit ac metus euismod lacinia.
+            Praesent vel rhoncus augue. Maecenas cursus commodo nulla eget viverra. Vivamus semper id erat et commodo. In congue enim condimentum sem vehicula, vel viverra felis sagittis. Integer non velit quis neque sollicitudin viverra. Ut eget porta dui. Donec tempor porttitor velit, vel eleifend nulla maximus in. Aliquam erat volutpat.
+            Suspendisse pharetra aliquam mauris, sed tincidunt est rutrum quis. Sed tincidunt sit amet ipsum eu tempus. Sed at nibh ac quam ullamcorper suscipit. Aenean viverra luctus ante, quis auctor neque varius id. In hac habitasse platea dictumst. Suspendisse dapibus scelerisque lectus, sit amet tincidunt eros efficitur id. Sed in interdum tortor. Sed in rutrum urna.
+            Curabitur luctus, magna eget elementum efficitur, ante velit tincidunt orci, in pharetra lorem enim nec mi. Nulla mattis sodales nibh at dignissim. Aliquam non eros at quam laoreet tempor. Ut at elit metus. Integer dictum eu purus vel ullamcorper. In commodo tristique dolor, at dictum est iaculis id. Etiam rutrum erat eu risus ultrices tristique. Nunc in placerat nulla, vel tincidunt sem. Curabitur nec elementum leo. Phasellus a venenatis elit. Vestibulum ac facilisis nibh, quis consectetur dui. Nullam rutrum consectetur congue. Duis id porta urna, iaculis dictum ipsum. Morbi eget congue nisi, vel commodo neque.
+            Sed semper nisl id magna bibendum posuere. Morbi sodales mi a sagittis faucibus. Donec sit amet sem urna. In at consectetur odio, eu malesuada erat. Donec at sagittis tortor, a elementum libero. Donec ultrices auctor velit, non condimentum leo ultricies et. Ut in quam nec nisi convallis luctus. Curabitur eros lacus, iaculis at lobortis sed, ornare eu massa. Mauris eu bibendum nulla. Phasellus tempor ipsum a leo bibendum bibendum. Nulla in tincidunt tortor. Quisque sodales ante eget mattis semper. Maecenas cursus consectetur metus, et rhoncus odio efficitur vel. Morbi vulputate velit ante, ac rhoncus leo rhoncus eget.
+        </p>
+    </div>
+    <script src = Principal.js ></script>
 </body>
 </html>

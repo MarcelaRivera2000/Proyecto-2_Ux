@@ -1,9 +1,12 @@
-class Apunte {
-    constructor(descripcion, fecha,likes,dislikes) {
-      this.descripcion = descripcion;
-      this.fecha = fecha;
-      this.likes = likes;
-      this.dislikes = dislikes;
-    }
+var btnGuardar=document.getElementById('btnAgregar'),
+    overlay= document.getElementById('overlay'),
+    popup= document.getElementById('popup'),
+    btnCerrar=document.getElementById('btn-cerrar-popup');
+
+    btnGuardar.addEventListener('click',function(){
+      overlay.classList.add('active');
+    });
     
-  }
+    btnCerrar.addEventListener('click',function(){
+        overlay.classList.remove('active');
+    });
