@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .wrapper{
@@ -53,7 +54,6 @@ header nav a {
 header nav a:hover{
     background: #f3a897;
     color: #fff;
-
     border-radius: 50px;
     text-decoration: none;
 }
@@ -135,7 +135,99 @@ p #Vtitulo{
     color: #f3a897;
 }
 
-
-#texto-prueba{
+.Koana{
     margin-top: 50px;
+}
+
+.Koana #btnAgregar{
+    margin-bottom: 25px;
+    height: 35px;
+    width: 99%;
+    max-width: 1000px;
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    font-size: 20px;
+}
+
+.Koana #btnAgregar:hover{
+    color: #f3a897;
+    border: 1px solid #dd8b78;
+    
+}
+
+.Koana #Koana-Contenido-total{
+    margin-left:20px;
+    margin-right:20px;
+    border-left: 2px solid #dbdbdb;
+    border-right: 2px solid #dbdbdb;
+    border-top: 2px solid #dbdbdb;
+    margin-bottom: 100px;
+}
+
+.Koana #Contenido-Tarea{
+    border-bottom: 2px solid #dbdbdb;
+    background-color: #fff;
+}
+
+.Koana #Contenido-Tarea:hover{
+    border: 2px solid #dd8b78;   
+}
+
+#Contenido-Contener{
+    display: flex;
+}
+
+#Contenido-Contener #btnEliminar{
+    border: 1px solid #dbdbdb;
+}
+
+#Contenido-Contener #btnEliminar:hover{
+    background-color: #dd8b78;
+    color: #fff;
+    font-size: 15px;
+}
+
+.Koana #Contenido-Tarea h4{
+    color:#94996a;
+    font-size: 23px;
+    margin-left: 2%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.Koana #Contenido-Tarea #Descripcion{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#Etiquetas{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5px;
+}
+
+#Etiquetas b{
+    margin-right: 1%;
+    color: #c2c0c0;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+}
+
+#Etiquetas b:hover{
+    color: #e4cfae;
+    border: 2px solid #e4cfae;
+}
+
+#Tarea-Interacciones{
+    display: flex;
+    margin-left: 2%;
+}
+
+#Tarea-Interacciones p{
+    margin-right: 1%;
+    margin-bottom: 10px;
+}
+#Etiquetas{
+    display: flex;
 }
