@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menexx |Profile</title>
+    <link rel="stylesheet" href="Principal.css">
+    <link rel="shortcut icon" href="notas.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class ="wrapper">
+            <p id="NameEmpresa">Menexx</p>
+            <nav>
+                <a href="#"  type="button">Search</a>
+                <a href="#"  type="button">Friends</a>
+                <a href="./Inicio.html"  type="button">Iniciar Seccion</a>
+            </nav>
+        </div>
+    </header>
+    <div id="IncioSeccion"class="wrapper">
+        <h2>Inicio de Sesion</h2>
+        <p>Username: <input id= "Vtitulo" type="text"/></p>
+        <p>Password: <input id= "Vtitulo" type="password"/></p>
+        <button id="btnInicio" class="btn">Iniciar</button>
+        <br>
+        <a href="#"  type="button" id="EnlaceRegistro">Registrarse</a>
+    </div>
+
+    <div class="Registro-overlay" id="Registro-overlay">
+        <div class="Registro-popup" id="Registro-popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><p class="fas fa-times">x</p></a>
+            <h3 class ="wrapper">REGISTRO</h3>
+            <br>
+            <form action="" class="wrapper">
+                <div class="contenedor">
+                    <p>Username: <input id= "Vtitulo" type="text"/></p>
+                    <p>Password: <input id= "Vtitulo" type="password"/></p>
+                    <p>Confirme: <input id= "Vtitulo" type="password"/></p>
+                </div>
+                <button id="btnGuardar" class="btn">Registrarse</button>
+            </form>
+        </div>
+    </div>
+
+    <script src = Inicio.js ></script>
+</body>
+</html>

@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto#2_Ux</title>
+    <title>Menexx</title>
     <link rel="stylesheet" href="Principal.css">
     <link rel="shortcut icon" href="notas.png">
-
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
 </head>
@@ -19,31 +17,31 @@
             <nav>
                 <a href="#"  type="button">Search</a>
                 <a href="#"  type="button">Friends</a>
-                <a href="#"  type="button">Profile</a>
+                <a href="./Inicio.html"  type="button">Iniciar Seccion</a>
             </nav>
         </div>
     </header>
     <div class="overlay" id="overlay">
         <div class="popup" id="popup">
             <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><p class="fas fa-times">x</p></a>
-            <h3 class ="wrapper">NUEVA TAREA PENDIENTE</h3>
+            <h3 class ="wrapper">NUEVA APUNTE</h3>
             <br>
             <form action="" class="wrapper">
                 <div class="contenedor">
                     <p>Titulo: <input id= "Vtitulo" type="text"/></p>
                     <textarea id="Vtext-area"></textarea>
                 </div>
-                <div id="VEtiquetas"></div>
+                <p>Etiquetas: <input id= "Vetiquetas" type="text"/></p>
                 <button id="btnGuardar" class="btnGuardar">Guardar</button>
             </form>
         </div>
     </div>
     <div class="Koana wrapper">
-        <button id="btnAgregar">Agregar Tarea</button>
+        <button id="btnAgregar">Agregar Apunte</button>
         <div id="Koana-Contenido-total">
                 
                 <div id="Contenido-Contener">
-                    <button id="btnEliminar" class="btnEliminar">Terminar Tarea</button>
+                    <button id="btnFecha">15/6/21</button>
                     <div id="Contenido-Tarea">
                         <h4 id="Titulo">Titulo-ejemplo</h4>
                         <p id="Descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor, nunc at varius gravida, libero dui commodo neque, id iaculis velit sem eu elit. In quis ornare felis, eget egestas tortor. Sed ac sagittis lorem. Aliquam commodo mollis enim, sit amet dignissim tellus cursus ut. Cras hendrerit velit purus, quis placerat velit interdum ut. Quisque tempus, mauris a tempor malesuada, dolor nibh porttitor ipsum, id ullamcorper ex leo sit amet felis. Sed molestie convallis turpis quis semper. Praesent ultricies, magna sit amet finibus laoreet, enim nibh tristique leo, vel congue justo augue eget ex. Morbi lobortis ipsum in fringilla porta. Vivamus nibh eros, ultrices non tortor nec, ultrices posuere dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum semper vestibulum odio ac auctor. Duis eleifend nisl lorem, in volutpat purus hendrerit nec. Praesent luctus purus ornare sodales eleifend. Quisque auctor, nisl ac imperdiet efficitur, nibh lacus faucibus erat, non vulputate risus lorem nec enim. Nulla luctus veli                
@@ -53,49 +51,13 @@
                             <b href="#" type="button" value="Etiqueta#3">Etiqueta#3</b>
                         </div>
                         <div id="Tarea-Interacciones">
-                            <p id="btnLikes" type="button">likes</p>
-                            <p id="btnDislikes" type="button">Dislikes</p>
-                            <p id="btnCompartir" type="button">Compartir</p>
+                            <p id="btnLikes" class="btnInterracion" type="button"><img src="like.png" class="tamano"></p>
+                            <p id="btnDislikes" class="btnInterracion" type="button"><img src="dislike.png" class="tamano"></p>
+                            <p id="btnCompartir" class="btnInterracion" type="button"><img src="share.png" class="tamano"></p>
                         </div>
                     </div> 
                 </div>
-                <div id="Contenido-Contener">
-                    <button id="btnEliminar" class="btnEliminar">Terminar Tarea</button>
-                    <div id="Contenido-Tarea">
-                        <h4 id="Titulo">Titulo-ejemplo</h4>
-                        <p id="Descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor, nunc at varius gravida, libero dui commodo neque, id iaculis velit sem eu elit. In quis ornare felis, eget egestas tortor. Sed ac sagittis lorem. Aliquam commodo mollis enim, sit amet dignissim tellus cursus ut. Cras hendrerit velit purus, quis placerat velit interdum ut. Quisque tempus, mauris a tempor malesuada, dolor nibh porttitor ipsum, id ullamcorper ex leo sit amet felis. Sed molestie convallis turpis quis semper. Praesent ultricies, magna sit amet finibus laoreet, enim nibh tristique leo, vel congue justo augue eget ex. Morbi lobortis ipsum in fringilla porta. Vivamus nibh eros, ultrices non tortor nec, ultrices posuere dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum semper vestibulum odio ac auctor. Duis eleifend nisl lorem, in volutpat purus hendrerit nec. Praesent luctus purus ornare sodales eleifend. Quisque auctor, nisl ac imperdiet efficitur, nibh lacus faucibus erat, non vulputate risus lorem nec enim. Nulla luctus veli                
-                        <div id="Etiquetas">
-                            <b href="#" type="button" value="Etiqueta#1">Etiqueta#1</b>
-                            <b href="#" type="button" value="Etiqueta#2">Etiqueta#2</b>
-                            <b href="#" type="button" value="Etiqueta#3">Etiqueta#3</b>
-                        </div>
-                        <div id="Tarea-Interacciones">
-                            <p id="btnLikes" type="button">likes</p>
-                            <p id="btnDislikes" type="button">Dislikes</p>
-                            <p id="btnCompartir" type="button">Compartir</p>
-                        </div>
-                    </div> 
-                </div>
-                <div id="Contenido-Contener">
-                    <button id="btnEliminar" class="btnEliminar">Terminar Tarea</button>
-                    <div id="Contenido-Tarea">
-                        <h4 id="Titulo">Titulo-ejemplo</h4>
-                        <p id="Descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor, nunc at varius gravida, libero dui commodo neque, id iaculis velit sem eu elit. In quis ornare felis, eget egestas tortor. Sed ac sagittis lorem. Aliquam commodo mollis enim, sit amet dignissim tellus cursus ut. Cras hendrerit velit purus, quis placerat velit interdum ut. Quisque tempus, mauris a tempor malesuada, dolor nibh porttitor ipsum, id ullamcorper ex leo sit amet felis. Sed molestie convallis turpis quis semper. Praesent ultricies, magna sit amet finibus laoreet, enim nibh tristique leo, vel congue justo augue eget ex. Morbi lobortis ipsum in fringilla porta. Vivamus nibh eros, ultrices non tortor nec, ultrices posuere dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum semper vestibulum odio ac auctor. Duis eleifend nisl lorem, in volutpat purus hendrerit nec. Praesent luctus purus ornare sodales eleifend. Quisque auctor, nisl ac imperdiet efficitur, nibh lacus faucibus erat, non vulputate risus lorem nec enim. Nulla luctus veli                
-                        <div id="Etiquetas">
-                            <b href="#" type="button" value="Etiqueta#1">Etiqueta#1</b>
-                            <b href="#" type="button" value="Etiqueta#2">Etiqueta#2</b>
-                            <b href="#" type="button" value="Etiqueta#3">Etiqueta#3</b>
-                        </div>
-                        <div id="Tarea-Interacciones">
-                            <p id="btnLikes" type="button">likes</p>
-                            <p id="btnDislikes" type="button">Dislikes</p>
-                            <p id="btnCompartir" type="button">Compartir</p>
-                        </div>
-                    </div> 
-                </div>
-                
-
-
+        
         </div>
     </div>
     <script src = Principal.js ></script>

@@ -83,7 +83,7 @@ header nav a:hover{
     padding: 20px;
     text-align: center;
     width: 620px;
-    height: 400px;
+    height: 450px;
 }
 
 .popup .btn-cerrar-popup{
@@ -100,7 +100,7 @@ header nav a:hover{
     color: #f3a897;
 }
 
-p #Vtitulo,#Vtext-area{
+p #Vtitulo,#Vtext-area,#Vetiquetas{
     border-radius: 10px;
     margin:10px;
     outline: none;
@@ -109,12 +109,15 @@ p #Vtitulo,#Vtext-area{
     font-size: 15px;
 }
 
-p #Vtitulo{
+p #Vtitulo,#Vetiquetas{
     width: 400px;
     height: 35px;
+    padding-left: 10px;
 }
 
 #Vtext-area{
+    padding-left: 5px;
+    padding-right: 5px;
     width: 500px;
     height: 200px;
 }
@@ -159,30 +162,21 @@ p #Vtitulo{
 .Koana #Koana-Contenido-total{
     margin-left:20px;
     margin-right:20px;
-    border-left: 2px solid #dbdbdb;
-    border-right: 2px solid #dbdbdb;
-    border-top: 2px solid #dbdbdb;
     margin-bottom: 100px;
-}
-
-.Koana #Contenido-Tarea{
-    border-bottom: 2px solid #dbdbdb;
-    background-color: #fff;
-}
-
-.Koana #Contenido-Tarea:hover{
-    border: 2px solid #dd8b78;   
 }
 
 #Contenido-Contener{
     display: flex;
+    border: 2px solid #dbdbdb;
+    background-color: #fff;
+    margin-top: 5px;
 }
 
-#Contenido-Contener #btnEliminar{
+#Contenido-Contener #btnFecha{
     border: 1px solid #dbdbdb;
 }
 
-#Contenido-Contener #btnEliminar:hover{
+#Contenido-Contener #btnFecha:hover{
     background-color: #dd8b78;
     color: #fff;
     font-size: 15px;
@@ -199,6 +193,7 @@ p #Vtitulo{
 .Koana #Contenido-Tarea #Descripcion{
     margin-left: 2%;
     margin-right: 2%;
+    text-align: justify;
 }
 
 #Etiquetas{
@@ -230,4 +225,86 @@ p #Vtitulo{
 }
 #Etiquetas{
     display: flex;
+}
+
+.tamano{
+    margin: 5px;
+}
+
+.tamano:hover{
+    height: 25px;
+}
+
+.btn{
+    margin-bottom: 25px;
+    height: 35px;
+    width: 50%;
+    max-width: 1000px;
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    font-size: 20px;
+}
+
+.btn:hover{
+    background-color: #f3a897;
+    border: 1px solid #dd8b78;
+    color: #fff;
+}
+
+#IncioSeccion a{
+    color:#dd8b78;
+    font-size: 20px;
+}
+
+#IncioSeccion a:hover{
+    color:#ac381e;
+}
+
+#IncioSeccion{
+    text-align: center;
+    margin-top: 150px;    
+}
+
+
+.Registro-overlay{
+    z-index: 100;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.Registro-overlay.active{
+    visibility: visible;
+}
+
+.Registro-popup{
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 620px;
+    height: 300px;
+}
+
+.Registro-popup .btn-cerrar-popup{
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    text-align: left;
+    color: #BBBBBB;
+    transition: .3 ease all;
+    text-decoration: none;
+}
+
+.Registro-popup .btn-cerrar-popup:hover{
+    color: #f3a897;
 }
